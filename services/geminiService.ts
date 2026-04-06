@@ -3,7 +3,7 @@ const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 export async function askGemini(prompt: string) {
   const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`,
+    `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${AIzaSyC-8pX8YTKqK8NeqsQ7O7CJUKJOlFTCaq0}`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
