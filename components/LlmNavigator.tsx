@@ -3,7 +3,7 @@ import { useState } from "react";
 import { askGemini } from "../services/geminiService";
 
 export default function LlmNavigator() {
-  const [input, setInput] = useState("введите что нибудь");
+  const [input, setInput] = useState("Hello AI");
   const [messages, setMessages] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
 
@@ -36,7 +36,7 @@ export default function LlmNavigator() {
           className="flex-1 p-2 text-black rounded"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          
+          placeholder="Ask AI about traffic..."
         />
         <button
           onClick={handleAsk}
