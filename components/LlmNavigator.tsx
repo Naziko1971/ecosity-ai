@@ -36,7 +36,7 @@ export default function LlmNavigator() {
           className="flex-1 p-2 text-black rounded"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Спроси про трафик..."
+          
         />
         <button
           onClick={handleAsk}
