@@ -3,7 +3,7 @@ import { useState } from "react";
 import { askGemini } from "../services/geminiService";
 
 export default function LlmNavigator() {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState("введите что нибудь");
   const [messages, setMessages] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
 
